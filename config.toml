@@ -1,0 +1,43 @@
+baseurl = "http://mysite.com/"
+languageCode = "en-us"
+title = "internet weblog"
+theme = "internet-weblog"
+Paginate = 10
+SectionPagesMenu = "main"
+
+[author]
+   Handle = "jnjosh"
+   FirstName = "Josh"
+   LastName = "Johnson"
+   AboutPage = "/about"
+   Location = "Durham, NC"
+   FlickrID = "87151163@N00"
+
+[params]
+   Description = "This is my blog, read it and enjoy."
+   ShowCopyright = true
+   RSSEnabled = true
+   RSSSections = [ "Posts", "Microposts", "Photos" ]
+
+[taxonomies]
+   tag = "tags"
+   category = "categories"
+   series = "series"
+
+[[menu.main]]
+   name = "Posts"
+   weight = 1
+   identifier = "posts"
+   url = "/posts/"
+
+[[menu.main]]
+   name = "Microposts"
+   weight = 2
+   identifier = "microposts"
+   url = "/microposts/"
+
+[[menu.main]]
+   name = "Photos"
+   weight = 3
+   identifier = "photos"
+   url = "/photos/"
