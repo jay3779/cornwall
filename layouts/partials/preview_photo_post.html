@@ -1,0 +1,16 @@
+<article class="photo">
+
+  <div class="preview">
+    <div class="title">
+      <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>
+    </div>
+    <div class="content">
+      <a href="{{ .Permalink }}">{{ .Permalink }}</a>
+      <figure>
+      	<img{{ with .Params.thumbnail }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
+      	<figcaption>The Cloud Gate or "Bean" is really fun to photograph.</figcaption>
+      </figure>
+    </div>
+  </div>
+
+</article>

@@ -1,0 +1,77 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# These lines should *not* be indented
+media_folder: "static/images/uploads" # Media files will be stored in the repo under static/images/uploads
+public_folder: "/images/uploads" # The src attribute for uploaded media will begin with /images/uploads
+
+collections:
+  - name: "post" # Used in routes, e.g., /admin/collections/post
+    label: "Post" # Used in the UI
+    folder: "content/posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "posts/single.html"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Categories", name: "categories", widget: "list"}
+
+  - name: "microposts" # Used in routes, e.g., /admin/collections/microposts
+    label: "Microposts" # Used in the UI
+    folder: "content/microposts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{hour}}{{minute}}{{second}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Title", name: "title", widget: "string", required: true}
+      - {label: "Body", name: "body", widget: "markdown", required: true}
+
+  - name: "photos" # Used in routes, e.g., /admin/collections/post
+    label: "Photos" # Used in the UI
+    folder: "content/photos" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/photoss/single.html"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Location", name: "location", widget: "string"}
+      - {label: "Camera", name: "camera", widget: "string"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image",  required: true}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages" # Used in routes, e.g., /admin/collections/post
+    label: "Pages" # Used in the UI
+    folder: "content/" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
+    editor:
+      preview: true
+    fields: # The fields for each document, usually in front matter
+      - {label: "Layout", name: "layout", widget: "hidden"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "pages" # Used in routes, e.g., /admin/collections/post
+    label: "Footer" # Used in the UI
+    delete: false
+    files: 
+    - file: "layouts/partials/bio.html" # The path to the folder where the documents are stored
+      label: "Footer"
+      name: "footer"
+      fields:
+          - {label: "Layout", name: "layout", widget: "hidden"}
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+    create: false # Allow users to create new documents in this collection
+    editor:
+      preview: true
