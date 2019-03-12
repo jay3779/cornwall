@@ -6,6 +6,8 @@ location: kfjkdsjf
 camera: dfgfg
 thumbnail: /images/uploads/freed_shoe.jpg
 ---
+![](/images/uploads/freed_shoe.jpg)
+
 dfgfdg
 
 fdgf
