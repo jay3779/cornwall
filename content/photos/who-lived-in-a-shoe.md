@@ -3,7 +3,7 @@ layout: layouts/photoss/single.html
 title: Who lived in a shoe
 date: 2019-03-12T17:06:56.313Z
 location: Redruth
-camera: ..
+camera: asdf
 thumbnail: /images/uploads/freed_shoe.jpg
 ---
 There was an old woman who lived in a shoe.
