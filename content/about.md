@@ -5,8 +5,8 @@ title: About
 
 <div style="float:right; margin:10px 0 10px 30px;">
   <figure>
-    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" style="width: 300px;" />
-    <figcaption>Photo by <a href="http://fuadkamal.org">Fuad Kamal</a>. Used with permission.</figcaption>
+    <img src="blob:https://hausleincornwall.com/bf434ea0-22b7-46b6-82fd-602bc190f438" style="width: 300px;" />
+    <figcaption>Photo by <a href="http://instagram.com/claire">Claire Shaw</a>. Used with permission.</figcaption>
 
   </figure>
 </div>
