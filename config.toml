@@ -1,21 +1,21 @@
 baseurl = "/"
 languageCode = "en-us"
-title = "internet weblog"
+title = "Häusle in Cornwall"
 theme = "internet-weblog"
 pygmentsstyle = "emacs"
 Paginate = 10
 SectionPagesMenu = "main"
 
 [author]
-   Handle = "jnjosh"
-   FirstName = "Josh"
-   LastName = "Johnson"
+   Handle = "Häusle"
+   FirstName = "Häusle"
+   LastName = "Cornwall"
    AboutPage = "/about"
-   Location = "Durham, NC"
-   FlickrID = "87151163@N00"
+   Location = "Redruth, UK"
+   FlickrID = "145760991@N03"
 
 [params]
-   Description = "This is my blog, read it and enjoy."
+   Description = "Häusle in Cornwall. Urlaub machen wie bei Rosamund Pilcher"
    ShowCopyright = true
    RSSEnabled = true
    RSSSections = [ "Posts", "Microposts", "Photos" ]
