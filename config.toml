@@ -6,6 +6,9 @@ pygmentsstyle = "emacs"
 Paginate = 10
 SectionPagesMenu = "main"
 
+# Google Analytics UA number
+googleAnalytics = "UA-XXXXXXXX-X"
+
 [author]
    Handle = "Häusle"
    FirstName = "Häusle"
@@ -19,6 +22,9 @@ SectionPagesMenu = "main"
    ShowCopyright = true
    RSSEnabled = true
    RSSSections = [ "Posts", "Microposts", "Photos" ]
+   twitter = "twitter_username"
+   opengraphimage = "/images/uploads/ripple.jpg" #default if no thumbnail is used in the post.
+   logo = "/images/uploads/fakelogo.png"
 
 [taxonomies]
    tag = "tags"

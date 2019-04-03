@@ -1,0 +1,27 @@
+<header>
+  <nav>{{ if isset .Site.Params "logo" }}<a href="/" class="logo"><img class="logo" data-scroll src="{{ .Site.Params.logo }}" alt="@{{ .Site.Author.handle }}"></a> <h1 class="h1logo">{{ .Site.Title }}</h1>{{ else }} <h1><a href="/">@{{ .Site.Author.handle }}</a>’s {{ .Site.Title }}.</h1>{{ end }}
+
+    <div class="menu" id="myTopnav">
+    {{ if isset .Site.Params "rsssections" }}
+
+      {{ $.Scratch.Add "sections" .Site.Params.rsssections }}
+      <ul>
+        {{ range .Site.Menus.main }}
+            <li>
+              <a href="{{ .URL }}">{{ .Name }}</a>
+              {{ if in ($.Scratch.Get "sections") .Name }}
+                <a href="{{ .URL }}index.xml"><img src="/img/rss.svg" class="rss-icon" /></a>
+              {{ end }}
+            </li>
+        {{ end }}
+        {{ with .Site.Author.aboutpage }}<li><a href="{{ . }}">About</a></li>{{ end }}
+      </ul>
+    
+      {{ end }}
+      
+    </div>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </nav>
+</header>
