@@ -5,6 +5,7 @@ theme = "internet-weblog"
 pygmentsstyle = "emacs"
 Paginate = 10
 SectionPagesMenu = "main"
+assetDir = "static/"
 
 # Google Analytics UA number
 googleAnalytics = "UA-XXXXXXXX-X"

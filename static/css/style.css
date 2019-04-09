@@ -1,4 +1,31 @@
 /* Page Updates */
+body {
+  font: 16px/24px "Roboto", "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
+  background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
+  background-color: rgb(37, 185, 211);
+  background-color: #FFF5EE;
+  background-color: #BDAAD9;
+  /*background: url(/images/uploads/cloud2.svg);*/
+  background-size: 1.5em 11em, 1.5em 11em, 2.3em 8em, 2.3em 8em, 3.5em 11em, 3.5em 11em, 100% 100%;
+  /*background-repeat: repeat;
+  background-size: 100% 100%;*/
+  /* https://loading.io/pattern/m-cloud/ */
+  /*background: url(/images/uploads/cloud.svg);*/
+  /*background: linear-gradient(#E0FFFF 50%, rgba(224,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #E0FFFF 53%, rgba(224, 255, 255, 0) 0) 0 0,
+radial-gradient(circle closest-side, #E0FFFF 50%, rgba(224,255,255,0) 0) 55px 0 #00b2b5;
+background-size: 110px 270px;
+background-repeat: repeat-x;*/
+}
+/*
+body.site {
+  font: 16px/24px "Roboto", "Avenir Next", "Helvetica Neue", Arial, Helvetica, sans-serif;
+}*/
+
+h1, h2, h3, h4 {
+  font-family: 'Rasa', serif;
+}
+
 .page ul {
     list-style-type: none;
     margin: 0;
@@ -33,7 +60,47 @@ article.micropost p > img {
     padding: 10px;
 }
 
+article.micropost {
+  border-radius: 5px;
+  background-color: #FFF5EE;
+  margin: 40px auto;
+  padding: 10px;
+  max-width: 760px;
+}
+
+article.photo .title {
+  font-family: 'Rasa', serif;
+  background-color:   #666666;
+ /* #7198B2;  #476286 #AAC5D9 #B28C71 #B28C71*/
+  font-size: 18pt;
+  padding: 15px;
+}
+article.photo div {
+  background-color: #FFF5EE;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  overflow: hidden;
+}
+
 /* Post */
+.post, .page, .post-groups {
+  border-radius: 5px;
+  margin: 40px auto;
+  max-width: 760px;
+  padding: 10px;
+  background-color: #FFF5EE;
+}
+
+.post-group-item:hover {
+  background-color: #FFF5EE;
+}
+/*
+footer {
+  background-color: #8C6244;
+}*/
+
 figure {
     margin: 0 0 20px 0;
 }
@@ -57,7 +124,11 @@ figcaption {
     background-color: #FFFEDC;
 }
 
+/* Header items */
 
+.menu {
+  border-radius: 5px;
+}
   .logo {
     float: left;
     display: block;
@@ -74,8 +145,8 @@ figcaption {
 header h1 {
     text-align: left;
     vertical-align: top;
-    font-size: 30px;
-    line-height: 32px;
+    font-size: 36px;
+    line-height: 37px;
     margin: 0 auto;
     padding: 4px 10px 10px 10px;
     max-width: 720px;
@@ -85,13 +156,42 @@ header h1 {
 header h1.h1logo {
   text-align: left;
   vertical-align: top;
-  font-size: 30px;
-  line-height: 32px;
+  font-size: 42px;
+  line-height: 42px;
   margin: 0 auto;
-  padding: 4px 10px 10px 10px;
+  padding: 4px 10px 5px 10px;
   max-width: 720px;
   color: #5B636E;
 }
+
+nav ul > li {
+  background-color: #FFF5EE;
+}
+
+
+
+article.post h2 a[href] {
+  color: #666666;
+}
+/*
+a[href] {
+  color: #666666;
+  text-decoration: none;
+}*/
+/*
+h1, h2, h3, h4 {
+  color: #666666;
+}*/
+
+/*
+nav ul > li:first-child, li:last-child{
+  padding:15px;
+  border-radius: 5px;
+}
+*/
+nav ul > li:first-child{ border-top-left-radius:5px; border-bottom-left-radius: 5px; } 
+nav ul > li:last-child{ border-top-right-radius: 5px; border-bottom-right-radius:5px; } 
+
 
   @media screen and (max-width: 780px) {
     .menu {display: none;}
@@ -99,10 +199,12 @@ header h1.h1logo {
       display: none;
     }
     .logo {
-      float: none;
+     /* float: left;*/
       display: block;
-      position: relative;
       margin-right: 0;
+      padding: 0 5px 0 10px;
+      /*top: -20px;*/
+      left: 2px;
   }
   header h1 {
     text-align: center;
@@ -116,11 +218,48 @@ header h1.h1logo {
     }
 
     header h1.h1logo {
-      text-align: center;
+      text-align: left;
+      font-size: 36px;
+      line-height: 37px;
     }
+    
+    nav ul > li:first-child{ border-top-left-radius:0; border-bottom-left-radius: 0; } 
+    nav ul > li:last-child{ border-top-right-radius: 0; border-bottom-right-radius:0; } 
+
+    article.micropost,article.post,article.page, article.post-groups {
+      margin: 20px;
+      padding: 10px;
+      border-radius: 0;
+    }
+
+    article.photo {
+      border-radius: 5px;
+      margin: 5px;
+      max-width: 780px;
+      overflow: hidden;
+      height: 300px;
+    }
+  }
+
+  .starfish {
+    position: absolute;
+    left: 70%;
+    top: 100px;
+    height: 95px; 
+    width: 80px;
+    z-index: 10;
+    overflow: visible;
+    background-image: url(/images/uploads/starfish-sunglas-small.png);
   }
   
   @media screen and (max-width: 780px) {
+    body {
+    background: linear-gradient(#E0FFFF 50%, rgba(224,255,255,0) 0) 0 0,
+    radial-gradient(circle closest-side, #E0FFFF 53%, rgba(224, 255, 255, 0) 0) 0 0,
+    radial-gradient(circle closest-side, #E0FFFF 50%, rgba(224,255,255,0) 0) 55px 0 #00b2b5;
+    background-size: 110px 220px;
+    background-repeat: repeat-x;
+    }
     .menu.responsive {position: relative; display: block}
     .icon {
       float: right;
@@ -132,7 +271,17 @@ header h1.h1logo {
       top: 6px;
       padding-left: 5px;
     }
-   
+    .starfish {
+      position: absolute;
+      left: 80%;
+      top: 90px;
+      height: 95px; 
+      width: 80px;
+      background-image: url(/images/uploads/starfish-sunglas-small.png);
+    }
+    header {
+      padding: 40px 0 40px 0;
+  }
   }
  
   @media screen and (max-width: 425px) {
@@ -160,4 +309,10 @@ header h1.h1logo {
       color: #5B636E;
       }
    
+      .logo {
+        display: none;
+      }
+      header h1.h1logo {
+        text-align: center;
+      }
   }

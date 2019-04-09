@@ -1,16 +1,38 @@
 <article class="photo">
-
   <div class="preview">
     <div class="title">
       <span><a href="{{ .Permalink }}">{{ .Title }}</a></span>
     </div>
     <div class="content">
-      <a href="{{ .Permalink }}">{{ .Permalink }}</a>
-      <figure>
-      	<img{{ with .Params.thumbnail }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
-      	<figcaption>The Cloud Gate or "Bean" is really fun to photograph.</figcaption>
-      </figure>
+    {{ $img := "" }}
+    {{ $title := .Title }}
+    {{ $content := .Content }}
+    {{ $figcaption := .Params.Figcaption }}
+    {{ with .Params.thumbnail }}
+    {{ $default_thumbnail := . }}
+    {{ $path := printf "static/%s" $default_thumbnail | printf "%s" }}
+    {{ if (fileExists $path) }}
+    {{ $img := resources.Get $default_thumbnail }}
+    <p>
+        <figure>
+           <img {{ with $img }} {{ $img := .Resize "780x Linear q30" }} src="{{ $img.Permalink }}"{{ end }} alt="{{ $title }}" lazyload="on">
+         {{ with $figcaption }}<figcaption>{{ . }}</figcaption>{{ end }}
+       </figure>
+     </p>
+    {{ else }}
+     You probably have the wrong file path for the thumbnail..  
+    {{ end }}
+    {{ else }}
+    No thumbnail in frontmatter!  
+    {{ end }}
+    
+    
+    
+    
+    
+
+
+    
     </div>
   </div>
-
 </article>

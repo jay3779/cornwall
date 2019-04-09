@@ -1,6 +1,5 @@
 {{ partial "site_header.html" . }}
 {{ partial "page_header.html" . }}
-
   <main class="content">
     <article class="post">
       <h2><a rel="full-article" href="{{ .Permalink }}">{{ .Title }}</a></h2>
@@ -10,14 +9,30 @@
         <time datetime="{{ .Date }}" pubdate="">{{ .Date.Format "January 2, 2006" }}</time>
         {{ with .Params.camera }} with {{ . }}{{ end }}
       </div>
+    
 
+      {{ $img := "" }}
+      {{ $title := .Title }}
+      {{ $content := .Content }}
+      {{ $figcaption := .Params.Figcaption }}
+      {{ with .Params.thumbnail }}
+      {{ $default_thumbnail := . }}
+      {{ $path := printf "static/%s" $default_thumbnail | printf "%s" }}
+      {{ if (fileExists $path) }}
+      {{ $img := resources.Get $default_thumbnail }}
       <p>
-         <figure>
-          <img{{ with .Params.thumbnail }} src="{{ . }}"{{ end }} alt="{{ .Title }}">
-          <figcaption>One World just goes up forever.</figcaption>
-        </figure>
-        {{ .Content }}
-      </p>
+          <figure>
+             <img {{ with $img }} {{ $img := .Resize "780x Linear q30" }} src="{{ $img.Permalink }}"{{ end }} alt="{{ $title }}" lazyload="on">
+           {{ with $figcaption }}<figcaption>{{ . }}</figcaption>{{ end }}
+         </figure>
+         {{ $content }}
+       </p>
+       {{ else }}
+       You probably have the wrong file path for the thumbnail..
+      {{ end }}
+      {{ else }}
+      No thumbnail in frontmatter!  
+      {{ end }}
     </article>
   </main>
 
