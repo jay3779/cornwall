@@ -25,7 +25,7 @@ googleAnalytics = "UA-XXXXXXXX-X"
    RSSSections = [ "Posts", "Microposts", "Photos" ]
    twitter = "twitter_username"
    opengraphimage = "/images/uploads/ripple.jpg" #default if no thumbnail is used in the post.
-   logo = "/images/uploads/fakelogo.png"
+   logo = "/images/uploads/hausle_in_cornwall.png"
 
 [taxonomies]
    tag = "tags"
