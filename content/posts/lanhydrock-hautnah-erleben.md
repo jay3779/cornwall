@@ -15,7 +15,7 @@ Das Lanhydrock House liegt auf einem 1.000 Hektar Anwesen und beherbergt unter a
 
 **Der historische Garten**
 
-Der historische Garten \[Wiederkehrendes Thema]  mit einer 30 Hektar Waldfläche wurde bereits 1857 angelegt. Allerdings unterging der Garten im Laufe der Zeit einigen Veränderungen und wurde in der viktorianischen Zeit zu dem heutigen Aussehen umgestaltet. Der gesamte Garten ist von einer außerordentlichen Atmosphäre umgeben, die sich in der brillanten Bepflanzung widerspiegelt. 
+Der historische Garten mit einer 30 Hektar Waldfläche wurde bereits 1857 angelegt. Allerdings unterging der Garten im Laufe der Zeit einigen Veränderungen und wurde in der viktorianischen Zeit zu dem heutigen Aussehen umgestaltet. Der gesamte Garten ist von einer außerordentlichen Atmosphäre umgeben, die sich in der brillanten Bepflanzung widerspiegelt. 
 
 Von all den verschiedenen Pflanzen sind die Magnolien aus dem Himalaya Gebiet besonders hervorzuheben. Da sich Lanhydrock über 130 Meter Seehöhe und eher im Landesinneren von Cornwall befindet, erreichen die Himalaya-Magnolien ihre volle Größe. Verglichen mit den üppigen Talgärten der Südküste, müssen die Pflanzen in dieser Gegend mit einer raueren Klimazone fertig werden.
 
