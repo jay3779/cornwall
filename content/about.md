@@ -5,7 +5,7 @@ title: About
 
 <div style="float:right; margin:10px 0 10px 30px;">
   <figure>
-    <img src="https://hausleincornwall.com/bf434ea0-22b7-46b6-82fd-602bc190f438" style="width: 300px;" />
+    <img src="https://hausleincornwall.com/images/uploads/welcome_to_häusle.jpeg" style="width: 300px;" />
     <figcaption>Photo by <a href="http://instagram.com/claire">Claire Shaw</a>. Used with permission.</figcaption>
 
   </figure>
