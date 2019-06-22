@@ -15,3 +15,5 @@ Hi, we're Häusle in Cornwall. An English family promoting its Cornish Cottage i
 <br />
 
 Hallo, wir sind Häusle in Cornwall, eine englische Familie, die mit ihrem Cornish Cottage in Redruth für unsere lieben deutschen Touristen wirbt, die durch Rosamund Pilcher oder Elisabeth Kabatek etwas über Cornwall lernen möchten. Wir sind sehr stolz auf unser Cottage, Cornwall und all seine Freuden und Besonderheit. Wir möchten unser Abenteuer in Cornwall mit Ihnen teilen und Sie einladen, hier Urlaub zu machen! In diesem Blog finden Sie Geschichten darüber, was die Engländer in Cornwall leben und erleben.
+
+<a href="https://g.page/Häusle" >Find Us</a>
