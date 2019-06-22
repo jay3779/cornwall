@@ -23,7 +23,7 @@ googleAnalytics = "UA-XXXXXXXX-X"
    ShowCopyright = true
    RSSEnabled = true
    RSSSections = [ "Posts", "Microposts", "Photos" ]
-   twitter = "twitter_username"
+   twitter = "@husle15"
    opengraphimage = "/images/uploads/ripple.jpg" #default if no thumbnail is used in the post.
    logo = "/images/uploads/hausle_in_cornwall.png"
 
